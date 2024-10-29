@@ -1,0 +1,362 @@
+{
+	"info": {
+		"_postman_id": "2999dec2-5c42-46de-80f9-0685491752ad",
+		"name": "QR API",
+		"description": "Comprehensive API documentation for the QR App.\n\nContact Support:\n Email: qrapptest@yopmail.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16782346"
+	},
+	"item": [
+		{
+			"name": "order",
+			"item": [
+				{
+					"name": "place",
+					"item": [
+						{
+							"name": "order place create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"address\": \"<string>\",\n  \"mode\": \"<string>\",\n  \"items\": [\n    {\n      \"product_variant\": \"<integer>\",\n      \"quantity\": \"<integer>\"\n    },\n    {\n      \"product_variant\": \"<integer>\",\n      \"quantity\": \"<integer>\"\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/order/place/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"order",
+										"place",
+										""
+									]
+								},
+								"description": "Place an order with the specified items."
+							},
+							"response": [
+								{
+									"name": "Untitled Response",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Basic <credentials>",
+												"description": "Added as a part of security scheme: basic"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"address\": \"<string>\",\n  \"mode\": \"<string>\",\n  \"items\": [\n    {\n      \"product_variant\": \"<integer>\",\n      \"quantity\": \"<integer>\"\n    },\n    {\n      \"product_variant\": \"<integer>\",\n      \"quantity\": \"<integer>\"\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/order/place/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"order",
+												"place",
+												""
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"order_number\": \"<string>\"\n}"
+								},
+								{
+									"name": "Untitled Response",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Basic <credentials>",
+												"description": "Added as a part of security scheme: basic"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"address\": \"<string>\",\n  \"mode\": \"<string>\",\n  \"items\": [\n    {\n      \"product_variant\": \"<integer>\",\n      \"quantity\": \"<integer>\"\n    },\n    {\n      \"product_variant\": \"<integer>\",\n      \"quantity\": \"<integer>\"\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/order/place/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"order",
+												"place",
+												""
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"address\": \"<string>\",\n  \"mode\": \"<string>\",\n  \"items\": \"<string>\"\n}"
+								},
+								{
+									"name": "Untitled Response",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Basic <credentials>",
+												"description": "Added as a part of security scheme: basic"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"address\": \"<string>\",\n  \"mode\": \"<string>\",\n  \"items\": [\n    {\n      \"product_variant\": \"<integer>\",\n      \"quantity\": \"<integer>\"\n    },\n    {\n      \"product_variant\": \"<integer>\",\n      \"quantity\": \"<integer>\"\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/order/place/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"order",
+												"place",
+												""
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"items\": \"<string>\"\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "restaurants",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "menu",
+							"item": [
+								{
+									"name": "restaurants menu list",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/restaurants/:id/menu/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"restaurants",
+												":id",
+												"menu",
+												""
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"description": "(Required) "
+												},
+												{
+													"key": "restaurant_id",
+													"value": "<integer>",
+													"description": "(Required) ID of the restaurant"
+												}
+											]
+										},
+										"description": "Get restaurant menu by ID"
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"key": "Authorization",
+														"value": "Basic <credentials>",
+														"description": "Added as a part of security scheme: basic"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/restaurants/:id/menu/",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"restaurants",
+														":id",
+														"menu",
+														""
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"restaurantName\": \"<string>\",\n  \"menu\": \"<string>\"\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "{{basicAuthUsername}}",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "{{basicAuthPassword}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://qrapptest.pythonanywhere.com/api"
+		}
+	]
+}
